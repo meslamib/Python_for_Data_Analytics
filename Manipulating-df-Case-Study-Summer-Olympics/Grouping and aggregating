@@ -1,0 +1,6 @@
+
+# find the total number of medals awarded to the USA per edition
+
+USA_edition_grouped = medals.loc[medals.NOC == 'USA'].groupby('Edition')
+
+USA_edition_grouped['Medal'].count()
